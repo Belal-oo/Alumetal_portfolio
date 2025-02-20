@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
+<<<<<<< HEAD
   const [menuOpen, setMenuOpen] = useState(false);
   const [active, setActive] = useState("الرئيسية");
 
@@ -31,6 +32,11 @@ const Navbar = () => {
       </div>
     </Main>
   );
+=======
+  return <div className="Navbar">
+    
+  </div>;
+>>>>>>> 258b776a53af0173eff702c27387b4e9a128acd0
 };
 
 export default Navbar;

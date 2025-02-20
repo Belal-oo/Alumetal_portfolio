@@ -1,5 +1,4 @@
 import React from "react";
-import OurServices from "../our services/ourServices";
 import Navbar from "../components/Navbar";
 import bg from "../assets/kitchen-types-c-ar-10092021-2-640x400.jpg";
 import styled from "styled-components";
@@ -8,6 +7,7 @@ const Home = () => {
   return (
     <HomeContainer>
       <Navbar />
+<<<<<<< HEAD
       <div className="hero">
         <img src={bg} alt="" className="bg-image" />
         <div className="overlay">
@@ -19,6 +19,9 @@ const Home = () => {
       </div>
       <OurServices />
     </HomeContainer>
+=======
+    </div>
+>>>>>>> 258b776a53af0173eff702c27387b4e9a128acd0
   );
 };
 
