@@ -70,6 +70,7 @@ const Main = styled.div`
 
   .nav-links a:hover,
   .nav-links .active {
+    font-weight: bolder;
     color: #ffcc00;
   }
 

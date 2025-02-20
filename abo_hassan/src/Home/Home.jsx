@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <HomeContainer>
       <Navbar />
-      <div className="hero">
+      <div className="hero" id="الرئيسية">
         <img src={bg} alt="" className="bg-image" />
         <div className="overlay">
           <h1 className="title">شركه أبو حسن لأعمال الالوميتال</h1>
