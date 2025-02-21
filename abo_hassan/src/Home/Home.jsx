@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import bg from "../assets/6ee7662b-54ce-488a-923b-6168742f9930.jpg";
 import styled from "styled-components";
 import SimpleImageSlider from "react-simple-image-slider";
 
