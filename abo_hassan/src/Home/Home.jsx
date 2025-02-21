@@ -19,8 +19,8 @@ const Home = () => {
       <div className="hero" id="الرئيسية">
         <div>
           <SimpleImageSlider
-            width={896}
-            height={504}
+            width={1200}
+            height={500}
             images={images}
             showBullets={true}
             showNavs={true}
@@ -47,12 +47,10 @@ const HomeContainer = styled.div`
   .hero {
     position: relative;
     width: 100%;
-    // height: 92vh;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    // padding-bottom: 60px;
   }
 
   .bg-image {
