@@ -1,19 +1,35 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import { Slide } from "react-slideshow-image";
-import bg from "../assets";
+import bg from "../assets/6ee7662b-54ce-488a-923b-6168742f9930.jpg";
 import styled from "styled-components";
-import "react-slideshow-image/dist/styles.css";
+import SimpleImageSlider from "react-simple-image-slider";
 
 const Home = () => {
+  const images = [
+    { url: "../assets/5fedb3da-c348-4e4e-83a6-a74e8742645a.jpg" },
+    { url: "../assets/6ee7662b-54ce-488a-923b-6168742f9930.jpg" },
+    { url: "../assets/a8c92183-6921-4634-adee-4a58dcf9d3b2.jpg" },
+    { url: "../assets/dbe9cfd1-848e-40fd-a2d9-09199c5c6f12.jpg" },
+    { url: "../assets/f763fbfa-6e54-49f0-b991-a41fe5b10213.jpg" },
+  ];
+
   let samples = ["افضل الخامات", "اجود انواع القطاعات", "سرعة فى التنفيذ"];
   return (
     <HomeContainer>
       <Navbar />
       <div className="hero" id="الرئيسية">
-        <img src={bg} alt="" className="bg-image" />
+        <div>
+          <SimpleImageSlider
+            width={896}
+            height={504}
+            images={images}
+            showBullets={true}
+            showNavs={true}
+          />
+        </div>
+
         <div className="overlay">
-          <h1 className="title">شركه الاتحاد لأعمال الالوميتال</h1>
+          <h1 className="title">شركه أبو حسن لأعمال الالوميتال</h1>
           <p className="pOfTitle">
             {samples[Math.floor(Math.random() * (2 - 0 + 1)) + 0]}
           </p>
@@ -53,7 +69,6 @@ const HomeContainer = styled.div`
     border-radius: 10px;
     text-align: center;
     color: white;
-    margin: 0 15px;
   }
 
   .title {
