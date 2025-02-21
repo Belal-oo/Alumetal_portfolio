@@ -62,7 +62,9 @@ const Main = styled.div`
   padding: 50px 20px;
   background-color: #f9f9f9;
   text-align: center;
-
+  *{
+    direction:rtl;
+  }
   .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -156,6 +158,7 @@ const Main = styled.div`
 
   @media (max-width: 768px) {
     .contact-content {
+    direction:rtl;
       flex-direction: column;
       gap: 20px;
       text-align: center;
@@ -166,6 +169,11 @@ const Main = styled.div`
       padding: 0 20px;
       box-sizing: border-box;
       display: flex;
+      padding:20px;
+    }
+    .contact-form{
+      padding:50px;
+      algin-content:center;
     }
   }
 `;
