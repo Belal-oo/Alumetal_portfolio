@@ -27,7 +27,6 @@ function OurServices() {
                 window.removeEventListener('scroll', handleScroll);
             };
         }, []);
-        console.log(isScrolled)
         return (
             <div className="ourServices" id="أعمالنا" style={{direction : "rtl"}}>
         <div className="WaveTop">
