@@ -1,32 +1,15 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import styled from "styled-components";
-import SimpleImageSlider from "react-simple-image-slider";
+import bg from "../assets/6ee7662b-54ce-488a-923b-6168742f9930.jpg";
 
 const Home = () => {
-  const images = [
-    { url: "../assets/5fedb3da-c348-4e4e-83a6-a74e8742645a.jpg" },
-    { url: "../assets/6ee7662b-54ce-488a-923b-6168742f9930.jpg" },
-    { url: "../assets/a8c92183-6921-4634-adee-4a58dcf9d3b2.jpg" },
-    { url: "../assets/dbe9cfd1-848e-40fd-a2d9-09199c5c6f12.jpg" },
-    { url: "../assets/f763fbfa-6e54-49f0-b991-a41fe5b10213.jpg" },
-  ];
-
   let samples = ["افضل الخامات", "اجود انواع القطاعات", "سرعة فى التنفيذ"];
   return (
     <HomeContainer>
       <Navbar />
       <div className="hero" id="الرئيسية">
-        <div>
-          <SimpleImageSlider
-            width={1200}
-            height={500}
-            images={images}
-            showBullets={true}
-            showNavs={true}
-          />
-        </div>
-
+        <img src={bg} alt="" className="bg-image" />
         <div className="overlay">
           <h1 className="title">شركه أبو حسن لأعمال الالوميتال</h1>
           <p className="pOfTitle">
