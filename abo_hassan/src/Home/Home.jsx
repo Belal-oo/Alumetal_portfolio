@@ -1,19 +1,22 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import bg from "../assets/kitchen-types-c-ar-10092021-2-640x400.jpg";
+import { Slide } from "react-slideshow-image";
+import bg from "../assets";
 import styled from "styled-components";
-import OurServices from "../our services/ourServices";
+import "react-slideshow-image/dist/styles.css";
 
 const Home = () => {
-  let samples = ["افضل الخامات","اجود انواع القطاعات", "سرعة فى التنفيذ"]
+  let samples = ["افضل الخامات", "اجود انواع القطاعات", "سرعة فى التنفيذ"];
   return (
     <HomeContainer>
       <Navbar />
       <div className="hero" id="الرئيسية">
         <img src={bg} alt="" className="bg-image" />
         <div className="overlay">
-          <h1 className="title">شركه الاتحاد  لأعمال الالوميتال</h1>
-          <p className="pOfTitle">{samples[Math.floor(Math.random() * (2 - 0 + 1)) + 0]}</p>
+          <h1 className="title">شركه الاتحاد لأعمال الالوميتال</h1>
+          <p className="pOfTitle">
+            {samples[Math.floor(Math.random() * (2 - 0 + 1)) + 0]}
+          </p>
           <a href={`#عنا`} className="button">
             من نحن ؟
           </a>
@@ -35,7 +38,7 @@ const HomeContainer = styled.div`
     align-items: center;
     justify-content: center;
     // padding-bottom: 60px;
-    }
+  }
 
   .bg-image {
     width: 100%;
@@ -50,7 +53,7 @@ const HomeContainer = styled.div`
     border-radius: 10px;
     text-align: center;
     color: white;
-    margin:0 15px;
+    margin: 0 15px;
   }
 
   .title {
@@ -60,8 +63,8 @@ const HomeContainer = styled.div`
     margin: 1rem 0;
     color: #ffcc00;
   }
-  .pOfTitle{
-  font-size:25px;
+  .pOfTitle {
+    font-size: 25px;
   }
 
   .button {
