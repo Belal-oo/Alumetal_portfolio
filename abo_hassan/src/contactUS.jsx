@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { IoLogoWhatsapp } from "react-icons/io";
 
 const ContactUS = () => {
   return (
@@ -19,12 +20,15 @@ const ContactUS = () => {
                 <strong>العنوان:</strong> المدينة، الشارع، الدولة
               </li>
               <li>
-                <strong>الهاتف:</strong> +123 456 789
+                <strong>الهاتف:</strong> +123 555 559
               </li>
               <li>
-                <strong>البريد الإلكتروني:</strong> info@example.com
+                <strong>البريد الإلكتروني:</strong> gegegeg@example.com
               </li>
             </ul>
+            <button className="iconn">
+              <IoLogoWhatsapp className="heheh" />
+            </button>
           </div>
 
           <div className="contact-form">
@@ -112,6 +116,17 @@ const Main = styled.div`
     font-size: 1.1rem;
     color: #555;
     margin-bottom: 10px;
+  }
+
+  .contact-info .iconn {
+    font-size: 3rem;
+    padding: 20px;
+    float: left;
+    border: none;
+    background-color: white;
+  }
+  .contact-info .iconn .heheh {
+    cursor: pointer;
   }
 
   .contact-form .form-group {
