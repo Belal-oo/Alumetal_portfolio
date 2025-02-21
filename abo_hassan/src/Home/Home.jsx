@@ -19,7 +19,6 @@ const Home = () => {
           </a>
         </div>
       </div>
-      <OurServices />
     </HomeContainer>
   );
 };
