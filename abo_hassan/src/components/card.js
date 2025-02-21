@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Detalis from "../our services/detalis/detalis";
 export const Card = ({isScrolled,service,key}) => {
   console.log(service)
   return (

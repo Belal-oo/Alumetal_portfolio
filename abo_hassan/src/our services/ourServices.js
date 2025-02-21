@@ -1,5 +1,4 @@
 import "./main.css";
-import Detalis from "./detalis/detalis";
 import { useState, useEffect } from 'react';
 import {Card}  from "../components/card";
 function OurServices() {
