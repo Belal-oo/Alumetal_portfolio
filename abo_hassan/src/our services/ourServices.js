@@ -6,12 +6,12 @@ function OurServices() {
         {
             title: "المطابخ",
             description: "جميع اسعار المطابخ داخل الرابط",
-            url: "#",
+            url: `#details-1`,
         },
         {
             title: "اسعار الالوميتال",
             description: "شبابيك - ابواب - بلكونات ",
-            url: "#",
+            url: "#details-2",
         }
         ];
         const [isScrolled, setIsScrolled] = useState(false);
