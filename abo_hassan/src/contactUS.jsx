@@ -171,9 +171,5 @@ const Main = styled.div`
       display: flex;
       padding:20px;
     }
-    .contact-form{
-      padding:50px;
-      algin-content:center;
-    }
   }
 `;
