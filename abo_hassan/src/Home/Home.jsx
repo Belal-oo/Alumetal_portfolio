@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import { Slide } from "react-slideshow-image";
-import bg from "../assets";
+import bg from '../assets/5fedb3da-c348-4e4e-83a6-a74e8742645a.jpg';
 import styled from "styled-components";
 import "react-slideshow-image/dist/styles.css";
 
