@@ -1,7 +1,7 @@
 import "./main.css";
 import Detalis from "./detalis/detalis";
 import { useState, useEffect } from 'react';
-
+import {Card}  from "../components/card";
 function OurServices() {
     const services = [
         {
@@ -39,11 +39,7 @@ function OurServices() {
                 <div className={isScrolled ? "SectionTitle viewed" : "SectionTitle"}>أعمالنا</div>
                     <div className="ServicesGrid">
                     {services.map((service, index) => (
-                        <div className={isScrolled?"ServiceCard viewed":"ServiceCard"} key={index}>
-                            <div className="ServiceTitle">{service.title}</div>
-                            <div className="ServiceDescription">{service.description}</div>
-                            <a href={service.url}>تفاصيل</a>
-                        </div>
+                        <Card key={index} service={service} isScrolled={isScrolled} />
                     ))}
                     </div>
                 </div>
