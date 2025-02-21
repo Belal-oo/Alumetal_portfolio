@@ -1,3 +1,6 @@
+.ourServices{
+  position: relative;
+}
 .ServicesContainer {
   padding: 80px 20px;
   background-color: #f9fafb;
@@ -10,12 +13,30 @@
 }
 
 .SectionTitle {
+  position: relative;
   text-align: center;
   font-size: 2.5rem;
   color: #1f2937;
   margin-bottom: 50px;
 }
+.SectionTitle::before{
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 5px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  background: #1f2937;
+  bottom: 0;
+  transform: scale(0);
+  text-align: center;
+  transition: 0.8s;
+}
+.SectionTitle.viewed::before{
+  transform: scale(1);
 
+}
 .ServicesGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -32,7 +53,14 @@
   padding: 40px;
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  transition: 0.3s ease;
+  opacity: 0;
+}
+.ServiceCard a{
+  color:#333;
+}
+.ServiceCard.viewed{
+  opacity:1;
 }
 .ServiceCard:hover {
   transform: translateY(-5px);

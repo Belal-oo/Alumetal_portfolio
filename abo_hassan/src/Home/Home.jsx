@@ -5,6 +5,7 @@ import styled from "styled-components";
 import OurServices from "../our services/ourServices";
 
 const Home = () => {
+  let samples = ["افضل الخامات","اجود انواع القطاعات", "سرعة فى التنفيذ"]
   return (
     <HomeContainer>
       <Navbar />
@@ -12,6 +13,7 @@ const Home = () => {
         <img src={bg} alt="" className="bg-image" />
         <div className="overlay">
           <h1 className="title">شركه أبو حسن لأعمال الالوميتال</h1>
+          <p className="pOfTitle">{samples[Math.floor(Math.random() * (2 - 0 + 1)) + 0]}</p>
           <a href={`#عنا`} className="button">
             من نحن ؟
           </a>
@@ -28,12 +30,13 @@ const HomeContainer = styled.div`
   .hero {
     position: relative;
     width: 100%;
-    height: 92vh;
+    // height: 92vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 60px;
-  }
+    // padding-bottom: 60px;
+    }
 
   .bg-image {
     width: 100%;
@@ -56,6 +59,9 @@ const HomeContainer = styled.div`
     padding-bottom: 0.5rem;
     margin: 1rem 0;
     color: #ffcc00;
+  }
+  .pOfTitle{
+  font-size:25px;
   }
 
   .button {
