@@ -4,6 +4,7 @@ import ServiceDetails from './our services/detalis/ServiceDetails';
 import './App.css';
 import Home from './Home/Home';
 import ContactUS from './contactUS';
+import AboutUs from './aboutUs';
 
 function App() {
   return (
@@ -14,9 +15,10 @@ function App() {
             <>
               <Home />
               <OurServices />
+              <AboutUs />
               <ContactUS />
             </>
-          }/>
+          } />
           <Route path="/details/:id" element={<ServiceDetails />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>

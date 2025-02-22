@@ -17,13 +17,13 @@ const ContactUS = () => {
             <h2>معلومات التواصل</h2>
             <ul>
               <li>
-                <strong>العنوان:</strong> المدينة، الشارع، الدولة
+                <strong>العنوان:</strong> المنشيه، الشارع، الدولة
               </li>
               <li>
-                <strong>الهاتف:</strong> +123 555 559
+                <strong>الهاتف:</strong> +155 777 555
               </li>
               <li>
-                <strong>البريد الإلكتروني:</strong> gegegeg@example.com
+                <strong>البريد الإلكتروني:</strong> Hasona@example.com
               </li>
             </ul>
             <button className="iconn">
@@ -63,7 +63,9 @@ const ContactUS = () => {
 export default ContactUS;
 
 const Main = styled.div`
-  padding: 50px 20px;
+  height: 80vh;
+
+  padding: 70px 30px;
   background-color: #f9f9f9;
   text-align: center;
   * {
@@ -76,6 +78,7 @@ const Main = styled.div`
 
   h1 {
     font-size: 2.5rem;
+    padding: 50px;
     color: #333;
     margin-bottom: 20px;
   }
@@ -83,7 +86,7 @@ const Main = styled.div`
   p {
     font-size: 1.2rem;
     color: #666;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
 
   .contact-content {
