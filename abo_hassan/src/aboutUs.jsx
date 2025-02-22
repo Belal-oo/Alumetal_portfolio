@@ -15,7 +15,7 @@ const AboutUs = () => {
           <Image src={photo2} alt="" />
         </ImageContainer>
         <TextContainer>
-          <Title>الاتحاد للاأوميتال</Title>
+          <Title>الاتحاد للألوميتال</Title>
           <Paragraph>
             هي شبكة رائدة في مجال تنفيذ وتوريد أعمال الأوميتال عالية الجودة في
             مصر. تأسست الشركة برؤية مستقبلية وهدف واضح لتقديم أفضل الحلول
