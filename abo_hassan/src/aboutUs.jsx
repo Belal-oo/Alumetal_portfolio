@@ -6,7 +6,7 @@ import photo2 from "./assets/5fedb3da-c348-4e4e-83a6-a74e8742645a.jpg";
 
 const AboutUs = () => {
   return (
-    <Main id="عنا">
+    <Main id="من نحن">
       <MainHeader>
         <h1>من نحن</h1>
       </MainHeader>

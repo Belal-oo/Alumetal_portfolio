@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="logo">Abo~Hassan</div>
 
       <div className={`nav-links ${menuOpen ? "open" : ""}`}>
-        {["الرئيسية", "أعمالنا", "عنا", "تواصل معنا"].map((item) => (
+        {["الرئيسية", "أسعارنا", "من نحن", "تواصل معنا",].map((item) => (
           <a
             key={item}
             href={`#${item}`}
