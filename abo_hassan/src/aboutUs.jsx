@@ -48,7 +48,7 @@ const AboutUs = () => {
 export default AboutUs;
 
 const Main = styled.div`
-  height: auto;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
