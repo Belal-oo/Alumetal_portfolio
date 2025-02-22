@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import photo from "./assets/a8c92183-6921-4634-adee-4a58dcf9d3b2.jpg";
 import photo2 from "./assets/5fedb3da-c348-4e4e-83a6-a74e8742645a.jpg";
@@ -41,6 +42,9 @@ const AboutUs = () => {
           </Paragraph>
         </TextContainer>
       </Content>
+      <ButtonContainer>
+        <Button to="/more-details">المزيد</Button>
+      </ButtonContainer>
     </Main>
   );
 };
@@ -135,5 +139,25 @@ const Paragraph = styled.p`
   @media (max-width: 768px) {
     font-size: 1rem;
     margin-bottom: 20px;
+  }
+`;
+
+const ButtonContainer = styled.div`
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+`;
+
+const Button = styled(Link)`
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+
+  &:hover {
+    background-color: #0056b3;
   }
 `;
