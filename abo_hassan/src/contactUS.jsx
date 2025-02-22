@@ -26,6 +26,7 @@ const ContactUS = () => {
               </li>
               <li>
                 <strong>الهاتف:</strong> +155 777 555
+                <strong>الهاتف:</strong> +201225612494
               </li>
             </ul>
             <button className="iconn" onClick={handelWahtsClick}>
