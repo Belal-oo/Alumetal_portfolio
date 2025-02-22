@@ -14,7 +14,7 @@ const AboutUs = () => {
           <Image src={photo2} alt="" />
         </ImageContainer>
         <TextContainer>
-          <Title>ابو حسن للاأوميتال</Title>
+          <Title>الاتحاد للاأوميتال</Title>
           <Paragraph>
             هي شبكة رائدة في مجال تنفيذ وتوريد أعمال الأوميتال عالية الجودة في
             مصر. تأسست الشركة برؤية مستقبلية وهدف واضح لتقديم أفضل الحلول
@@ -27,7 +27,7 @@ const AboutUs = () => {
           <Image src={photo} alt="" />
         </ImageContainer>
         <TextContainer>
-          <Title>مميزات الوميتال ابوحسن </Title>
+          <Title>مميزات الوميتال الاتحاد </Title>
           <Paragraph>
             لوميتال ابوحسن يعتبر هذا القطاع من أفضل قطاعات الالوميتال و الاكثر
             استخداماً فى اعمال واجهات العماير و المطابخ و الشبابيك و الابواب

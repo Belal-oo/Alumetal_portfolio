@@ -11,7 +11,7 @@ const Home = () => {
       <div className="hero" id="الرئيسية">
         <img src={bg} alt="" className="bg-image" />
         <div className="overlay">
-          <h1 className="title">شركه أبو حسن لأعمال الالوميتال</h1>
+          <h1 className="title">شركه الاتحاد لأعمال الالوميتال</h1>
           <p className="pOfTitle">
             {samples[Math.floor(Math.random() * (2 - 0 + 1)) + 0]}
           </p>
@@ -48,6 +48,7 @@ const HomeContainer = styled.div`
     padding: 3rem;
     border-radius: 10px;
     text-align: center;
+    margin:0 20px;
     color: white;
   }
 
@@ -75,4 +76,5 @@ const HomeContainer = styled.div`
   .button:hover {
     background: #e6b800;
   }
+  
 `;
