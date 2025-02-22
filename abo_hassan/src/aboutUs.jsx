@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import photo from "./assets/a8c92183-6921-4634-adee-4a58dcf9d3b2.jpg";
 import photo2 from "./assets/5fedb3da-c348-4e4e-83a6-a74e8742645a.jpg";
+
 const AboutUs = () => {
   return (
     <Main id="عنا">
@@ -47,12 +48,12 @@ const AboutUs = () => {
 export default AboutUs;
 
 const Main = styled.div`
-  height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #f8fafc;
+  background-color: #eeeeee;
   padding: 20px;
 `;
 
@@ -64,6 +65,10 @@ const MainHeader = styled.div`
   h1 {
     font-size: 3rem;
     color: #333;
+
+    @media (max-width: 768px) {
+      font-size: 2rem;
+    }
   }
 `;
 
@@ -72,29 +77,53 @@ const Content = styled.div`
   align-items: center;
   max-width: 1200px;
   width: 100%;
+  margin-bottom: 40px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+  }
 `;
 
 const ImageContainer = styled.div`
   flex: 1;
   padding: 20px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 10px;
+  }
 `;
 
 const Image = styled.img`
-  width: 70%;
+  max-width: 70%;
   height: auto;
   border-radius: 10px;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
 `;
 
 const TextContainer = styled.div`
   flex: 1;
   padding: 20px;
   text-align: right;
+
+  @media (max-width: 768px) {
+    text-align: center;
+    padding: 10px;
+  }
 `;
 
 const Title = styled.h1`
   font-size: 2rem;
   color: #333;
   margin-bottom: 20px;
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
 `;
 
 const Paragraph = styled.p`
@@ -102,4 +131,9 @@ const Paragraph = styled.p`
   color: #555;
   line-height: 1.6;
   margin-bottom: 40px;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
 `;

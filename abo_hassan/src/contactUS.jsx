@@ -3,6 +3,11 @@ import styled from "styled-components";
 import { IoLogoWhatsapp } from "react-icons/io";
 
 const ContactUS = () => {
+  const handelWahtsClick = (p) => {
+    console.log("lallaalla");
+    console.log(p);
+  };
+
   return (
     <Main id="تواصل معنا">
       <div className="container">
@@ -26,7 +31,7 @@ const ContactUS = () => {
                 <strong>البريد الإلكتروني:</strong> Hasona@example.com
               </li>
             </ul>
-            <button className="iconn">
+            <button className="iconn" onClick={handelWahtsClick}>
               <IoLogoWhatsapp className="heheh" />
             </button>
           </div>
@@ -63,7 +68,7 @@ const ContactUS = () => {
 export default ContactUS;
 
 const Main = styled.div`
-  height: 80vh;
+  height: 81vh;
 
   padding: 100px 30px;
   background-color: #f9f9f9;
