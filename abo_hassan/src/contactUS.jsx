@@ -27,9 +27,6 @@ const ContactUS = () => {
               <li>
                 <strong>الهاتف:</strong> +155 777 555
               </li>
-              <li>
-                <strong>البريد الإلكتروني:</strong> Hasona@example.com
-              </li>
             </ul>
             <button className="iconn" onClick={handelWahtsClick}>
               <IoLogoWhatsapp className="heheh" />
@@ -188,11 +185,41 @@ const Main = styled.div`
       align-items: center;
       justify-content: center;
       margin: 0 auto;
-      width: 100%;
+      max-width: 100%;
       padding: 0 20px;
       box-sizing: border-box;
       display: flex;
       padding: 20px;
+    }
+    .contact-form,
+    .contact-info {
+      width: 60%;
+    }
+    .contact-info h2,
+    .contact-form h2 {
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
+    .contact-info ul li {
+      font-size: 0.9rem;
+      margin-bottom: 7px;
+    }
+
+    .contact-form .form-group {
+      margin-bottom: 15px;
+      padding-left: 7px;
+    }
+
+    .contact-form label {
+      font-size: 0.9rem;
+      color: #333;
+      margin-bottom: 5px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 7px;
+      font-size: 0.9rem;
     }
   }
 `;
