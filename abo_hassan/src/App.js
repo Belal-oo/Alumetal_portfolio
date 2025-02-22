@@ -21,7 +21,7 @@ function App() {
             </>
           } />
           <Route path="/details/:id" element={<ServiceDetails />} />
-          <Route path="/more-details" element={<MoreDetails />} /> {/* Add this route */}
+          <Route path="/more-details" element={<MoreDetails />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>
