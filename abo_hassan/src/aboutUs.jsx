@@ -10,7 +10,6 @@ const AboutUs = () => {
       </MainHeader>
       <Content>
         <ImageContainer>
-          <Image src={photo} alt="" />
           <Image src={photo2} alt="" />
         </ImageContainer>
         <TextContainer>
@@ -19,6 +18,25 @@ const AboutUs = () => {
             هي شبكة رائدة في مجال تنفيذ وتوريد أعمال الأوميتال عالية الجودة في
             مصر. تأسست الشركة برؤية مستقبلية وهدف واضح لتقديم أفضل الحلول
             والمنتجات في مجال أعمال الأوميتال لعملائنا الكرام.
+          </Paragraph>
+        </TextContainer>
+      </Content>
+      <Content>
+        <ImageContainer>
+          <Image src={photo} alt="" />
+        </ImageContainer>
+        <TextContainer>
+          <Title>مميزات الوميتال ابوحسن </Title>
+          <Paragraph>
+            لوميتال ابوحسن يعتبر هذا القطاع من أفضل قطاعات الالوميتال و الاكثر
+            استخداماً فى اعمال واجهات العماير و المطابخ و الشبابيك و الابواب
+            وايضا التند و البلكونات لانه مقارنتا بقطاعات اخرى نجد ان قطاع ابوحسن
+            يتميز بثقل فى الوزن من القطاعات الاخرى مما يودى الى مميات عديده مثل
+            عزل الاصوات المزعجة لانه يسمح باضافه زجاج دابل لمنع الصوت زجاج دبل
+            لمنع وكتم الصوت بطريقه افضل تساهم فى الحصول على الهدوء و الراحه
+            المطلوبه و تقليل الاضائه فى حاله اختيار نوع معين مثل الزجاج العاكس
+            او الزجاج المصنفر و منع الاتربه نهائيا ويمتاز قطاع الوميتال بي اس
+            بالمتانة والقوة وسهولة الحركة
           </Paragraph>
         </TextContainer>
       </Content>
@@ -41,6 +59,7 @@ const Main = styled.div`
 const MainHeader = styled.div`
   text-align: center;
   margin-bottom: 40px;
+  padding: 20px;
 
   h1 {
     font-size: 3rem;
@@ -73,7 +92,7 @@ const TextContainer = styled.div`
 `;
 
 const Title = styled.h1`
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #333;
   margin-bottom: 20px;
 `;
@@ -82,5 +101,5 @@ const Paragraph = styled.p`
   font-size: 1.2rem;
   color: #555;
   line-height: 1.6;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 `;

@@ -65,7 +65,7 @@ export default ContactUS;
 const Main = styled.div`
   height: 80vh;
 
-  padding: 70px 30px;
+  padding: 100px 30px;
   background-color: #f9f9f9;
   text-align: center;
   * {
