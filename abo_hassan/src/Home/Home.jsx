@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import styled from "styled-components";
-import bg from "../assets/6ee7662b-54ce-488a-923b-6168742f9930.jpg";
+import Slider from "../components/slider";
 
 const Home = () => {
   let samples = ["افضل الخامات", "اجود انواع القطاعات", "سرعة فى التنفيذ"];
@@ -9,7 +9,7 @@ const Home = () => {
     <HomeContainer>
       <Navbar />
       <div className="hero" id="الرئيسية">
-        <img src={bg} alt="" className="bg-image" />
+        <Slider />
         <div className="overlay">
           <h1 className="title">شركه الاتحاد لأعمال الالوميتال</h1>
           <p className="pOfTitle">
@@ -29,27 +29,21 @@ export default Home;
 const HomeContainer = styled.div`
   .hero {
     position: relative;
-    width: 100%;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .bg-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    overflow: hidden;
   }
 
   .overlay {
     position: absolute;
-    background: rgba(0, 0, 0, 0.6);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.692);
     padding: 3rem;
     border-radius: 10px;
     text-align: center;
-    margin: 0 20px;
     color: white;
+    z-index: 10;
   }
 
   .title {
@@ -59,6 +53,7 @@ const HomeContainer = styled.div`
     margin: 1rem 0;
     color: #ffcc00;
   }
+
   .pOfTitle {
     font-size: 25px;
   }
