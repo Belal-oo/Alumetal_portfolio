@@ -15,7 +15,7 @@ const divStyle = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    height: '99vh',
+    height: '100vh',
     backgroundSize: 'cover',
     opacity: '1'
 };
