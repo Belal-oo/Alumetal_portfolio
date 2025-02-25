@@ -16,7 +16,6 @@ const MoreDetails = () => {
   const service = [{
     id: 1,
     title: 'خدمة الأوميتال',
-    // price: '1000 جنيه',
     description: 'نقدم خدمات الأوميتال عالية الجودة لتلبية احتياجاتك.',
     features: [
       'تصاميم عصرية',
@@ -28,7 +27,6 @@ const MoreDetails = () => {
   {
     id: 1,
     title: 'خدمة الأوميتال',
-    // price: '1000 جنيه',
     description: 'نقدم خدمات الأوميتال عالية الجودة لتلبية احتياجاتك.',
     features: [
       'تصاميم عصرية',

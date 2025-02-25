@@ -1,14 +1,18 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { FaBars, FaTimes } from "react-icons/fa";
-
+import logo from "../assets/logo.jpg"
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [active, setActive] = useState("الرئيسية");
 
   return (
     <Main>
-      <div className="logo">Abo~Hassan</div>
+      <div className="logo">
+        <a href="#الرئيسية">
+        <img src={logo} alt="logo" />
+        </a>
+      </div>
 
       <div className={`nav-links ${menuOpen ? "open" : ""}`}>
         {["الرئيسية", "أسعارنا", "من نحن", "تواصل معنا",].map((item) => (
@@ -49,9 +53,11 @@ const Main = styled.div`
   right: 0;
   z-index: 1000;
 
-  .logo {
-    font-size: 1.8rem;
-    font-weight: bold;
+  .logo img {
+    // font-size: 1.8rem;
+    // font-weight: bold;
+    width:70px;
+    border-radius:50px;
   }
 
   .nav-links {

@@ -22,14 +22,16 @@ const ContactUS = () => {
             <h2>معلومات التواصل</h2>
             <ul>
               <li>
-                <strong>العنوان:</strong> المنشيه، الشارع، الدولة
+                <strong>العنوان:</strong> حلوان , المنشيه
               </li>
               <li>
-                <strong>الهاتف:</strong> +155 777 555
+                <strong>الهاتف: 20125612494+</strong>
               </li>
             </ul>
             <button className="iconn" onClick={handelWahtsClick}>
+              <a href="https://api.whatsapp.com/send?phone=1225612494" target="blank" style={{color:"black"}}>
               <IoLogoWhatsapp className="heheh" />
+              </a>
             </button>
           </div>
 
