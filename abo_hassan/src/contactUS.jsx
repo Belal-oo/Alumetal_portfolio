@@ -1,11 +1,34 @@
 import React from "react";
 import styled from "styled-components";
 import { IoLogoWhatsapp } from "react-icons/io";
+import emailjs from "emailjs-com";
 
 const ContactUS = () => {
   const handelWahtsClick = (p) => {
     console.log("lallaalla");
     console.log(p);
+  };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_utqek06", 
+        "template_ka13py9", 
+        e.target,
+        "xNmjIKehfF6C87C0x"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("تم إرسال الرسالة بنجاح!");
+        },
+        (error) => {
+          console.log(error.text);
+          alert("حدث خطأ أثناء إرسال الرسالة.");
+        }
+      );
   };
 
   return (
@@ -25,19 +48,23 @@ const ContactUS = () => {
                 <strong>العنوان:</strong> حلوان , المنشيه
               </li>
               <li>
-                <strong>الهاتف: 20125612494+</strong>
+                <strong>الهاتف: 1096453986+</strong>
               </li>
             </ul>
             <button className="iconn" onClick={handelWahtsClick}>
-              <a href="https://api.whatsapp.com/send?phone=1225612494" target="blank" style={{color:"black"}}>
-              <IoLogoWhatsapp className="heheh" />
+              <a
+                href="https://api.whatsapp.com/send?phone=1096453986"
+                target="blank"
+                style={{ color: "black" }}
+              >
+                <IoLogoWhatsapp className="heheh" />
               </a>
             </button>
           </div>
 
           <div className="contact-form">
             <h2>أرسل لنا رسالة</h2>
-            <form>
+            <form onSubmit={sendEmail}>
               <div className="form-group">
                 <label htmlFor="name">الاسم الكامل</label>
                 <input type="text" id="name" name="name" required />
@@ -48,12 +75,7 @@ const ContactUS = () => {
               </div>
               <div className="form-group">
                 <label htmlFor="message">الرسالة</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows="5"
-                  required
-                ></textarea>
+                <textarea id="message" name="message" rows="5" required></textarea>
               </div>
               <button type="submit">إرسال</button>
             </form>
@@ -68,7 +90,6 @@ export default ContactUS;
 
 const Main = styled.div`
   height: 81vh;
-
   padding: 100px 30px;
   background-color: #f9f9f9;
   text-align: center;
@@ -79,27 +100,23 @@ const Main = styled.div`
     max-width: 1200px;
     margin: 0 auto;
   }
-
   h1 {
     font-size: 2.5rem;
     padding: 50px;
     color: #333;
     margin-bottom: 20px;
   }
-
   p {
     font-size: 1.2rem;
     color: #666;
     margin-bottom: 50px;
   }
-
   .contact-content {
     display: flex;
     justify-content: space-between;
     gap: 40px;
     text-align: right;
   }
-
   .contact-info,
   .contact-form {
     flex: 1;
@@ -108,25 +125,21 @@ const Main = styled.div`
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
-
   .contact-info h2,
   .contact-form h2 {
     font-size: 1.8rem;
     color: #333;
     margin-bottom: 20px;
   }
-
   .contact-info ul {
     list-style: none;
     padding: 0;
   }
-
   .contact-info ul li {
     font-size: 1.1rem;
     color: #555;
     margin-bottom: 10px;
   }
-
   .contact-info .iconn {
     font-size: 3rem;
     padding: 20px;
@@ -137,19 +150,16 @@ const Main = styled.div`
   .contact-info .iconn .heheh {
     cursor: pointer;
   }
-
   .contact-form .form-group {
     margin-bottom: 20px;
     padding-left: 10px;
   }
-
   .contact-form label {
     display: block;
     font-size: 1.1rem;
     color: #333;
     margin-bottom: 5px;
   }
-
   .contact-form input,
   .contact-form textarea {
     width: 100%;
@@ -158,11 +168,9 @@ const Main = styled.div`
     border: 1px solid #ccc;
     border-radius: 5px;
   }
-
   .contact-form textarea {
     resize: vertical;
   }
-
   .contact-form button {
     background-color: #007bff;
     color: #fff;
@@ -173,11 +181,9 @@ const Main = styled.div`
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
-
   .contact-form button:hover {
     background-color: #0056b3;
   }
-
   @media (max-width: 768px) {
     .contact-content {
       direction: rtl;
@@ -206,18 +212,15 @@ const Main = styled.div`
       font-size: 0.9rem;
       margin-bottom: 7px;
     }
-
     .contact-form .form-group {
       margin-bottom: 15px;
       padding-left: 7px;
     }
-
     .contact-form label {
       font-size: 0.9rem;
       color: #333;
       margin-bottom: 5px;
     }
-
     .contact-form input,
     .contact-form textarea {
       padding: 7px;
